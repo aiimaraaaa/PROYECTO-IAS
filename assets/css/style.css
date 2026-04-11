@@ -1,0 +1,242 @@
+css
+/*Archivo: style.css
+Proyecto: Sitio web IAS
+Descripción: Estilos generales para todas las páginas
+*/
+
+/*paleta de colores:
+-verde oscuro: #1b4332
+-verde medio: #2d6a4f
+-dorado: #c9a84c
+-dorado claro: #f0c96a
+-verde suave: #f0f7f0
+-blanco: #ffffff
+-fondo body: #f5f5f0
+texto: #1b4332
+
+
+
+/*Estilos generales de la pagina*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #1b4332;
+    background-color: #f5f5f0;
+    margin: 0;
+    padding: 0;
+}
+/*Estilos para los titulos h1 y h3*/
+h1, h3 {
+    font-family: Georgia, serif;
+    color: #1b4332;
+    font-weight: bold;
+}
+/*Estilos para párrafos*/
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+/*Estilos para los enlaces*/
+a {
+    color: #c9a84c;
+    text-decoration: none;
+}
+/*Estilos para el mouse sobre el enlace*/
+a:hover {
+    color: #f0c96a;
+    text-decoration: underline;
+}
+
+/*EStilos del encabezado principal*/
+
+header {
+    background-color: #1b4332;
+    color: white;
+    padding: 25px 20px;
+    width: 100%;
+    border-bottom: 4px solid #c9a84c;
+}
+/*Estilos para los titulos dentro del header*/
+header h1, header h2 {
+    color: white;
+    margin: 5px 0;
+}
+/*Estilo especifico para el subtitulo del header h2*/
+header h2 {
+    color: #c9a84c;
+    font-size: 18px;
+}
+/*Estilos del menú de navegación*/
+#menu-principal {
+    background-color: #2d2d44;
+    padding: 12px 20px;
+    width: 100%;
+}
+/*Estilos para la lista del menu*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+/*Estilos para los enlaces del menu*/
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+/*EStilo al pasar el mouse sobre los enlaces del menu*/
+nav ul li a:hover {
+    color: #c9a84c;
+    text-decoration: underline;
+}
+
+/*estilos del contenido principal*/
+main {
+    padding: 30px 20px;
+    width: 100%;
+    min-height: 500px;
+    background-color: #ffffff;
+    margin: 0;
+}
+/*estilo para los titulos h2*/
+h2 {
+    color: #1b4332;
+    background-color: #f9f3e3;
+    padding: 10px 15px;
+    border-left: 5px solid #c9a84c;
+    border-radius: 4px;
+    font-size: 22px;
+}
+/*estilos de la tabla*/
+table {
+    width: 100%;
+    border: 1px solid #1b4332;
+    border-radius: 5px;
+    background-color: white;
+}
+/*EStilos de las casillas de la tabla*/
+th, td {
+    border: 1px solid #1b4332;
+    padding: 10px;
+    text-align: left;
+}
+/*Estilos del encabezado de la tabla*/
+th {
+    background-color: #1b4332;
+    color: #c9a84c;
+    font-weight: bold;
+}
+/*estilos del aside*/
+aside {
+    background-color: #f0f7f0;
+    border: 2px solid #c9a84c;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+
+/*clases personalizadas*/
+/*clase para resaltar informacion importante*/
+.destacado {
+    background-color: #f0f7f0;
+    padding: 5px 8px;
+    border-radius: 4px;
+    color: #1b4332;
+}
+/*clase para items de servicios*/
+.servicio-item {
+    margin-bottom: 15px;
+    background-color: #f0f7f0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border-left: 4px solid #c9a84c;
+}
+/*clase para el boton de enviar*/
+.btn-enviar {
+    background-color: #1b4332;
+    color: #c9a84c;
+    padding: 12px 20px;
+    border: 2px solid #c9a84c;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+/*estilo hover del boton*/
+.btn-enviar:hover {
+    background-color: #c9a84c;
+    color: #1b4332;
+}
+
+/*Estilos para inputs del formulario*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    background-color: white;
+}
+/*Estilo cuando el campo esta activo*/
+input:focus {
+    border: 2px solid #c9a84c;
+    outline: none;
+}
+/*estilos para select y textare*/
+select, textarea {
+    width: 100%;
+    padding: 1px;
+    margin: 8px 0;
+    border: 1px solid #2d6a4f;
+    border-radius: 4px;
+    background-color: white;
+}
+/*estilo para las etiquetas del formulario*/
+label {
+    font-weight: bold;
+    color: #1b4332;
+}
+
+/*estilo del pie de pagina*/
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    border-top: 4px solid #c9a84c;
+    width: 100%;
+}
+/*Párrafos dentro del footer*/
+footer p {
+    color: #c9a84c;
+    margin: 0;
+}
+
+/*Estilos para las imagenes*/
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+/*id formulario conttacto*/
+#formulario-contacto {
+    background-color: #f0f7f0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #2d2d44;
+}
+
+/*estilo para listas*/
+ul, ol {
+    list-style-type: disc;
+    padding-left: 20px;
+}

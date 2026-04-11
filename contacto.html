@@ -1,0 +1,88 @@
+<!-- 
+Página: Contacto
+Descripción: Infromación de contacto y formulario de consultas del IAS
+Autor: Valentina Schibilbain
+Fecha: 3/04/26
+-->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Instituto de Asistencia Social</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!--Encabezado principal: contiene título y subtítulo del organismo-->
+    <header>
+      <h1>Instituto de Asistencia Social - IAS</h1>
+      <h2>Organismo de Control de Juegos de Azar - Formosa</h2>
+    </header>
+    <nav id="menu-principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-ias.html">Sobre el IAS</a></li>
+        <li><a href="funciones.html">Funciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+    <!-- Formulario de contacto y información del IAS -->
+    <h2>Contacto</h2>
+
+    <!-- Sección información de contacto -->
+    <section>
+        <h3>Información de Contacto</h3>
+        <address>
+            <p> Dirección: Av. 25 de Mayo 098, P3600ACK Formosa</p>
+            <p> teléfono: (0370) 442-6114</p>
+            <p> Email: <a href="mailto:info@ias.gob.ar">info@ias.gob.ar</a></p>
+        </address>
+    </section>
+
+    <!-- Formulario de consulta -->
+    <form id="formulario-contacto" action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="(0370) 000-0000">
+
+        <label for="motivo">Motivo de consulta:</label>
+        <select id="motivo" name="motivo">
+            <option value="">Seleccioná una opción</option>
+            <option value="licencias">Licencias y habilitaciones</option>
+            <option value="juego-responsable">Juego responsable</option>
+            <option value="denuncias">Denuncias</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta acá..."></textarea>
+
+        <button type="submit" class="btn-enviar">Enviar consulta</button>
+    </form>
+
+    <!-- Horarios expandibles -->
+    <details>
+        <summary>Horarios de atención extendidos</summary>
+        <p>Lunes a Viernes: 7:00 - 16:00</p>
+        <p>Sábados: 8:00 - 12:00</p>
+        <p>Domingos y feriados: cerrado</p>
+    </details>
+
+    <!-- Mapa de ubicación -->
+    <section>
+        <h3>Ubicación</h3>
+        <a href="https://www.google.com/maps/place/Instituto+de+Asistencia+Social/@-26.1817236,-58.1681236,17z/data=!4m15!1m8!3m7!1s0x945ca5dd90e11739:0x425099517cdff4a4!2sBelgrano+753,+P3600ENK+Formosa!3b1!8m2!3d-26.1817236!4d-58.1655487!16s%2Fg%2F11jxszfmpk!3m5!1s0x945ca5dd94bf8b9f:0xc46100b79e1161f8!8m2!3d-26.1824524!4d-58.1649502!16s%2Fg%2F1v420k3f?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver en Google Maps </a>
+        <img src="assets/img/edificio-ias.jpg.jpeg" alt="IAS Formosa">
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2026 Instituto de Asistencia Social - IAS. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
