@@ -328,3 +328,7 @@ footer {
     border-top: 4px solid #c9a84c;
     width: 100%;
 }
+
+figure {
+    text-align: center;
+}
