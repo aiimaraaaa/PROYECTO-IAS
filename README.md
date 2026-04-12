@@ -1,5 +1,5 @@
 # Proyecto IAS - Parte 2
-**Alumno:** Valentina Schibilbain
+**Alumna:** Valentina Schibilbain
 **Materia:** Taller de Lenguaje de Programación 1
 **Año:** 2026
 
